@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <select name="moeda" id="moeda">
+            <option value="#">Selecione sua moeda</option>
+            <option value="BTC">Bitcoin</option>
+            <option value="LTC">Litecoin</option>
+            <option value="BCH">Bcash</option>
+            <option value="XRP">XRP (Ripple)</option>
+            <option value="ETH">Etherum</option>
+        </select>
+        <p>Selecione uma opção:</p>
+        <div class="radio-group">
+            <input type="radio" name="op" id="ticker" value="ticker">Resumo das Operações
+        </div>
+        <div class="radio-group">
+            <input type="radio" disabled name="op" id="orderbook" value="orderbook">Livro de negociações, ordens abertas de compra e venda
+        </div>
+        <div class="radio-group">
+            <input type="radio" disabled name="op" id="trades" value="trades">Histórico de operações executadas
+        </div>
+        <input type="submit" value="Enviar">
+    </form>
+    <div class="output">
+
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
