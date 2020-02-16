@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: orangered;
+  margin: 0;
+  font-family: 'Rubik', sans-serif;
+  color: #FFF;
+}
+
+.card {
+  list-style: none;
+  padding: 40px;
+  background: #f4f4f4;
+  color: #222;
+  text-align: center;
+  flex-basis: calc(25% - 0.5rem);
+  margin-left: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.card:hover {
+  animation: bounce 0.5s linear;
+}
+
+@keyframes bounce {
+  20% {
+    transform: translateY(-6px);
+  }
+  40% {
+    transform: translateY(0px);
+  }
+  60% {
+    translate: (-2px);
+  }
+  80% {
+    transform: translateY(0px);
+  }
+}
+
+.card-title {
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: normal;
+  margin-bottom: 0;
+}
+
+.card-subtitle {
+  font-weight: lighter;
+  color: #666;
+  margin-top: 5px;
+}
+
+.card-image {
+  height: 180px;
+  
+}
+
+#pokedex {
+  margin-top: 3rem;
+  padding-inline-start: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  position: relative;
+}
+
+.container {
+  padding: 40px;
+  margin: 0 auto;
+}
+
+h1 {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 54px;
+
+}
+.input-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+}
+.input-group input{
+  
+}
+
+.loader {
+  border: 16px solid #f3f3f3; /* Light grey */
+  border-top: 16px solid #3498db; /* Blue */
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
