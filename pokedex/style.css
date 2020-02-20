@@ -9,6 +9,10 @@ body {
   font-family: 'Rubik', sans-serif;
   color: #FFF;
 }
+.filters {
+  display: flex;
+  justify-content: space-evenly;
+}
 
 .card {
   list-style: none;
@@ -19,6 +23,10 @@ body {
   flex-basis: calc(25% - 0.5rem);
   margin-left: 0.5rem;
   margin-top: 0.5rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .card:hover {
@@ -42,7 +50,7 @@ body {
 
 .card-title {
   text-transform: uppercase;
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: normal;
   margin-bottom: 0;
 }
@@ -54,8 +62,7 @@ body {
 }
 
 .card-image {
-  height: 180px;
-  
+  width: 150px;
 }
 
 #pokedex {
@@ -65,7 +72,6 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-
   position: relative;
 }
 
@@ -77,7 +83,7 @@ body {
 h1 {
   text-transform: uppercase;
   text-align: center;
-  font-size: 54px;
+  font-size: 5rem;
 
 }
 .input-group {
