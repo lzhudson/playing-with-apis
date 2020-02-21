@@ -1,0 +1,29 @@
+@media screen and (max-width: 425px) {
+  .input-group {
+    display: flex;
+    flex-direction: column;
+  }
+  .input-group label {
+    align-self: flex-start;
+  }
+  .input-group input {
+    margin: 0.5rem 0;
+  }
+  .card {
+    flex-basis: calc(50% - 0.5rem);
+  }
+}
+@media screen and (max-width: 375px) {
+  h1 {
+    font-size: 2rem;
+    margin: 1rem 0;
+  }
+  #pokedex {
+    flex-wrap: nowrap;
+    flex-direction: column;
+    margin: 1rem 0;
+  }
+  .card {
+    flex: 1;
+  }
+}
