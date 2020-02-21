@@ -1,31 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pokedex</title>
-  <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./style.css">
-</head>
-<body>
-  <div class="container">
-    <h1>Pokedex</h1>
-    <div class="filters">
-      <div class="filter-name">
-        <div class="input-group">
-          <input type="text" name="name" id="pokemon-name">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokedex</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Rubik&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Pokedex</h1>
+      <div class="filters">
+        <div class="filter-name">
+          <div class="input-group">
+            <label for="name">Nome do Pokemon: </label>
+            <input type="text" name="name" id="pokemon-name" />
+          </div>
         </div>
+        <!-- <div class="filter-type">
+          <select name="type" id="select-type">
+            <option value="">Selecione um tipo</option>
+          </select>
+        </div> -->
       </div>
-      <div class="filter-type">
-        <select name="type" id="select-type">
-          <option value="">Selecione um tipo</option>
-        </select>
-      </div>
+      <ol id="pokedex"></ol>
     </div>
-    <ol id="pokedex">
-      
-    </ol>
-  </div>
-  <script src="./app.js"></script>
-</body>
+    <script src="./app.js"></script>
+  </body>
 </html>

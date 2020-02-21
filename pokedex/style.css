@@ -6,8 +6,8 @@
 body {
   background-color: orangered;
   margin: 0;
-  font-family: 'Rubik', sans-serif;
-  color: #FFF;
+  font-family: "Rubik", sans-serif;
+  color: #fff;
 }
 .filters {
   display: flex;
@@ -84,16 +84,19 @@ h1 {
   text-transform: uppercase;
   text-align: center;
   font-size: 5rem;
-
 }
 .input-group {
   display: flex;
   flex-direction: row;
   justify-content: center;
-
+  align-items: center;
+  margin: 1rem 0;
 }
-.input-group input{
-  
+.input-group input {
+  width: 300px;
+  border: none;
+  height: 25px;
+  margin-left: 1rem;
 }
 
 .loader {
@@ -106,6 +109,10 @@ h1 {
 }
 
 @keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
